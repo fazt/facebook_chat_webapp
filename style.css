@@ -1,0 +1,53 @@
+body {
+  background: #16a085; margin: 0; font-family: sans-serif;
+  /*height to text the fixed chat position*/
+  height: 900px;
+}
+/* Chat box Style*/
+.chat-box, .msg-box {
+  /*align to the bottom and right*/
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+
+  background: white;
+  width: 250px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.chat-head, .msg-head {
+  background: #f39c12;
+  padding: 15px;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+.chat-body { height: 400px; }
+
+.user { padding: 20px 25px; position: relative; }
+.user:hover { background: #f8f8f8; }
+
+/*green icon*/
+.user:before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #2ecc71;
+  content: "";
+  left: 8px;
+  top: 24px;
+  border-radius: 5px;
+}
+
+/*Msg box style*/
+.msg-box { width: 250px; background: white; bottom: -5px;}
+.msg-head { background: #3498db;}
+.close {float: right;}
+.msg-body { height: 250px; font-size: 12px; overflow-x: hidden;}
+.msg-footer {}
+  .msg-input {padding: 5px; box-sizing: border-box; width: 100%;border: transparent;border-top: 2px solid #bdc3c7;}
+.msg-a {min-height: 15px;border-radius: 5px;margin-top: 10px; margin-right: 20px; position: relative; margin-left: 20px; padding: 15px; background: #99ffcc;}
+  .msg-a:before{left: -29px; top: 7px;position: absolute; content: "";width: 0;height: 0;border: 15px solid;border-color:transparent #99ffcc transparent transparent;}
+.msg-b {min-height: 15px;border-radius: 5px;margin-top: 10px; margin-right: 20px; position: relative; margin-left: 20px; padding: 15px; background: #ffff99;}
+  .msg-b:before{right: -29px; top: 7px;position: absolute; content: "";width: 0;height: 0;border: 15px solid;border-color:transparent transparent transparent #ffff99;}
